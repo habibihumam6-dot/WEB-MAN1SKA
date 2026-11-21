@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f5a16">
+  <meta name="description" content="MAN1SKA TV - kanal televisi madrasah: kabar, karya, dan cerita kita.">
+
+  <!-- Pratinjau saat link dibagikan (WhatsApp, Facebook, dll).
+       PENTING: setelah web diupload, ganti "alamat-webmu.com" di og:url dan og:image dengan alamat web yang sebenarnya.
+       Gambar pratinjau harus berupa alamat lengkap (https://...), alamat relatif tidak terbaca oleh WhatsApp.
+       Letakkan og-image.png di folder yang sama dengan index.html. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MAN1SKA TV">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:title" content="MAN1SKA TV - Bukan Sekedar Berita Tapi Cerita Kita">
+  <meta property="og:description" content="Kanal televisi MAN 1 Surakarta: kabar, karya, dan cerita madrasah kita.">
+  <meta property="og:url" content="https://alamat-webmu.com/">
+  <meta property="og:image" content="https://alamat-webmu.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>MAN1SKA TV</title>
+  <link rel="icon" type="image/png" href="icon.png">
+
+  <!-- Font: Barlow Condensed (judul, gaya grafis berita TV) + Barlow (isi) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Gaya footer berisi (merek, menu, jalan pintas berita, kontak). Dimuat setelah style.css. -->
+  <link rel="stylesheet" href="footer.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="#home" class="navbar-logo"><img src="logo (1).png" alt="MAN1SKA TV"></a>
+  <div class="navbar-nav" id="menu">
+    <a href="#home">Beranda</a>
+    <a href="#about">Tentang kami</a>
+    <a href="#berita">Berita</a>
+    <a href="#program">Program</a>
+    <a href="#divisi">Divisi</a>
+    <a href="#contact">Kontak</a>
+  </div>
+  <button id="hamburger-menu" type="button" aria-label="Menu" aria-expanded="false"><i data-feather="menu"></i></button>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h1>Selamat Datang di <span>MAN1SKA TV</span></h1>
+    <p>Tempat kabar, karya, dan cerita madrasah kita tayang. Tonton, ikuti, dan berkarya bersama kami.</p>
+    <a href="#berita" class="btn gold with-icon cta">Berita Terkini<i data-feather="arrow-down"></i></a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>Tentang kami</h2>
+  <div class="row">
+    <div class="about-img"><img src="logo (1).png" alt="Logo MAN1SKA TV"></div>
+    <div class="about-text">
+      <h3>Siapa itu MAN1SKA TV?</h3>
+      <p>MAN1SKA TV adalah wadah siswa untuk berkarya lewat video, liputan, dan siaran. Dari kamera sampai layar, semuanya dikerjakan bersama oleh siswa anggota MAN1SKA TV dan dibantu madrasah.</p>
+      <p>Kami percaya tayangan yang baik lahir dari kerja sama: ide yang segar, gambar yang jujur, dan cerita yang dekat dengan kehidupan kita sehari-hari.</p>
+      <p class="slogan">Bukan Sekedar <span>Berita</span> Tapi <span>Cerita</span> Kita</p>
+    </div>
+  </div>
+</section>
+
+<section class="news" id="berita">
+  <div class="news-head">
+    <div>
+      <h2>Berita terbaru</h2>
+      <p class="lead">Liputan, vlog, dan dokumentasi terbaru dari kru MAN1SKA TV. Geser untuk melihat yang lain.</p>
+    </div>
+    <div class="news-side">
+      <div class="news-actions">
+        <a class="btn with-icon cta" href="portal/semua-berita.html"><i data-feather="book-open"></i>Berita selengkapnya</a>
+        <div class="news-nav">
+          <button type="button" id="news-prev" aria-label="Sebelumnya"><i data-feather="chevron-left"></i></button>
+          <button type="button" id="news-next" aria-label="Berikutnya"><i data-feather="chevron-right"></i></button>
+        </div>
+      </div>
+      <p class="news-note">Baca semua berita dan arsip terdahulu</p>
+    </div>
+  </div>
+  <!-- Satu kartu = satu berita. Salin blok news-card untuk menambah; gambar sampul di berita/img/. -->
+  <div class="news-track" id="news-track" tabindex="0" aria-label="Daftar berita">
+      <a class="news-card" href="berita/berita-1.html">
+        <img src="../gambar-berita/Upacara.jpg" alt="">
+        <div class="body">
+          <p class="meta"><span class="kind">Berita</span><time datetime="2026-11-10">10 Nov 2026</time></p>
+          <h3>Upacara Hari Pahlawan</h3>
+          <p class="desc">Pelaksanaan upacara memperingati Hari Pahlawan di MAN 1 Surakarta</p>
+        </div>
+      </a>
+      <a class="news-card" href="berita/berita-2.html">
+        <img src="berita/img/2.jpg" alt="">
+        <div class="body">
+          <p class="meta"><span class="kind">Vlog</span><time datetime="2026-11-08">8 Nov 2026</time></p>
+          <h3>Judul vlog pertama</h3>
+          <p class="desc">Tulis ringkasan singkat di sini, cukup satu sampai dua kalimat supaya kartu tetap rapi.</p>
+        </div>
+      </a>
+      <a class="news-card" href="berita/berita-3.html">
+        <img src="berita/img/3.jpg" alt="">
+        <div class="body">
+          <p class="meta"><span class="kind">Dokumentasi</span><time datetime="2026-11-02">2 Nov 2026</time></p>
+          <h3>Judul dokumentasi pertama</h3>
+          <p class="desc">Tulis ringkasan singkat di sini, cukup satu sampai dua kalimat supaya kartu tetap rapi.</p>
+        </div>
+      </a>
+      <a class="news-card" href="berita/berita-4.html">
+        <img src="berita/img/4.jpg" alt="">
+        <div class="body">
+          <p class="meta"><span class="kind">Berita</span><time datetime="2026-10-27">27 Okt 2026</time></p>
+          <h3>Judul berita kedua</h3>
+          <p class="desc">Tulis ringkasan singkat di sini, cukup satu sampai dua kalimat supaya kartu tetap rapi.</p>
+        </div>
+      </a>
+      <a class="news-card" href="berita/berita-5.html">
+        <img src="berita/img/5.jpg" alt="">
+        <div class="body">
+          <p class="meta"><span class="kind">Vlog</span><time datetime="2026-10-20">20 Okt 2026</time></p>
+          <h3>Judul vlog kedua</h3>
+          <p class="desc">Tulis ringkasan singkat di sini, cukup satu sampai dua kalimat supaya kartu tetap rapi.</p>
+        </div>
+      </a>
+  </div>
+</section>
+
+<section class="program" id="program">
+  <h2>Program kami</h2>
+  <p class="lead">Acara dan kegiatan yang dikerjakan kru MAN1SKA TV, lengkap dengan tanggal pelaksanaannya. Klik salah satu program untuk melihat penjelasan dan dokumentasinya.</p>
+  <!-- Satu kartu = satu program. Salin blok program-card untuk menambah; gambar kartu di program/img/.
+       Yang tampil maksimal 3 kartu, sisanya bisa digulir di dalam kotak (diatur otomatis oleh script.js).
+       Tiap kartu menuju halaman sendiri: program/program-N.html (salin salah satunya, lalu isi).
+       Tanggal boleh diganti teks bebas (misal "Setiap Jumat"), cukup hapus atribut datetime-nya. -->
+  <div class="program-list" id="program-list" tabindex="0" role="region" aria-label="Daftar program">
+    <a class="program-card" href="program/program-1.html">
+      <div class="program-img"><img src="gambar-program/recest.jpg" alt=""></div>
+      <div class="program-body">
+        <h3>Reorganisasi dan <i>Capacity Building</i></h3>
+        <p>Perombakan penuh organisasi diteruskan dengan pembekalan anggota dengan ilmu-ilmu jurnalistik, <i>photography</i>, dan <i>videography</i>.</p>
+        <div class="program-foot">
+          <p class="when"><i data-feather="calendar"></i><time datetime="2026-11-14">14 November 2026</time></p>
+          <span class="more">Selengkapnya<i data-feather="chevron-right"></i></span>
+        </div>
+      </div>
+    </a>
+    <a class="program-card" href="program/program-2.html">
+      <div class="program-img"><img src="program/img/2.jpg" alt=""></div>
+      <div class="program-body">
+        <h3>Nama program kedua</h3>
+        <p>Tulis penjelasan singkat program di sini, cukup satu sampai tiga kalimat supaya kartu tetap rapi.</p>
+        <div class="program-foot">
+          <p class="when"><i data-feather="calendar"></i><time datetime="2026-11-21">21 November 2026</time></p>
+          <span class="more">Selengkapnya<i data-feather="chevron-right"></i></span>
+        </div>
+      </div>
+    </a>
+    <a class="program-card" href="program/program-3.html">
+      <div class="program-img"><img src="program/img/3.jpg" alt=""></div>
+      <div class="program-body">
+        <h3>Nama program ketiga</h3>
+        <p>Tulis penjelasan singkat program di sini, cukup satu sampai tiga kalimat supaya kartu tetap rapi.</p>
+        <div class="program-foot">
+          <p class="when"><i data-feather="calendar"></i><time datetime="2026-12-05">5 Desember 2026</time></p>
+          <span class="more">Selengkapnya<i data-feather="chevron-right"></i></span>
+        </div>
+      </div>
+    </a>
+    <a class="program-card" href="program/program-4.html">
+      <div class="program-img"><img src="program/img/4.jpg" alt=""></div>
+      <div class="program-body">
+        <h3>Nama program keempat</h3>
+        <p>Tulis penjelasan singkat program di sini, cukup satu sampai tiga kalimat supaya kartu tetap rapi.</p>
+        <div class="program-foot">
+          <p class="when"><i data-feather="calendar"></i><time datetime="2026-12-12">12 Desember 2026</time></p>
+          <span class="more">Selengkapnya<i data-feather="chevron-right"></i></span>
+        </div>
+      </div>
+    </a>
+    <a class="program-card" href="program/program-5.html">
+      <div class="program-img"><img src="program/img/5.jpg" alt=""></div>
+      <div class="program-body">
+        <h3>Nama program kelima</h3>
+        <p>Tulis penjelasan singkat program di sini, cukup satu sampai tiga kalimat supaya kartu tetap rapi.</p>
+        <div class="program-foot">
+          <p class="when"><i data-feather="calendar"></i><time datetime="2026-12-19">19 Desember 2026</time></p>
+          <span class="more">Selengkapnya<i data-feather="chevron-right"></i></span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <p class="program-hint"><i data-feather="chevrons-down"></i>Gulir daftar untuk melihat program lainnya</p>
+</section>
+
+<section class="divisi" id="divisi">
+  <h2>Divisi kami</h2>
+  <p class="lead">Satu kanal, banyak peran. Klik salah satu divisi untuk melihat tugasnya lebih lengkap.</p>
+  <div class="crew">
+    <!-- <a class="role-row" href="divisi/inti.html">
+      <h3>Divisi inti</h3>
+      <p>Pengurus yang menentukan arah tayangan, mengatur jadwal, dan menjaga kerja sama seluruh kru.</p>
+      <span class="more">Selengkapnya<i data-feather="chevron-right"></i></span>
+    </a> -->
+    <a class="role-row" href="divisi/reporter.html">
+      <h3>Reporter</h3>
+      <p>Tampil di depan kamera: meliput langsung di lapangan, mewawancarai narasumber, dan membawakan berita.</p>
+      <span class="more">Selengkapnya<i data-feather="chevron-right"></i></span>
+    </a>
+    <a class="role-row" href="divisi/wartawan.html">
+      <h3>Wartawan</h3>
+      <p>Mencari dan memeriksa informasi, lalu menulisnya menjadi berita dan naskah yang jelas.</p>
+      <span class="more">Selengkapnya<i data-feather="chevron-right"></i></span>
+    </a>
+    <a class="role-row" href="divisi/cameraman.html">
+      <h3>Cameraman</h3>
+      <p>Merekam gambar saat liputan dan siaran, dari menentukan sudut pengambilan sampai mengatur cahaya.</p>
+      <span class="more">Selengkapnya<i data-feather="chevron-right"></i></span>
+    </a>
+    <a class="role-row" href="divisi/editor.html">
+      <h3>Editor</h3>
+      <p>Merangkai gambar, suara, dan teks menjadi tayangan yang rapi dan siap ditonton.</p>
+      <span class="more">Selengkapnya<i data-feather="chevron-right"></i></span>
+    </a>
+    <a class="role-row" href="divisi/layouter.html">
+      <h3>Layouter</h3>
+      <p>Merancang tampilan visual seperti poster, thumbnail, dan grafis di layar agar tayangan tampak seragam.</p>
+      <span class="more">Selengkapnya<i data-feather="chevron-right"></i></span>
+    </a>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Kontak kami</h2>
+  <p class="lead">Punya saran, ingin acaramu diliput, atau mau bergabung jadi kru? Tulis saja di sini.</p>
+  <div class="contact-wrap">
+    <div class="contact-side">
+      <ul class="info">
+        <li><i data-feather="map-pin"></i><span>MAN 1 Surakarta, Surakarta, Jawa Tengah</span></li>
+        <li><i data-feather="mail"></i><a href="mailto:emailkamu@gmail.com" data-email>emailkamu@gmail.com</a></li>
+        <li><i data-feather="instagram"></i><span>Madrasah: <a class="ig" href="https://instagram.com/man1surakarta" target="_blank" rel="noopener">@man1surakarta</a></span></li>
+        <li><i data-feather="instagram"></i><span>Kanal TV: <a class="ig" href="https://instagram.com/man1skatv" target="_blank" rel="noopener">@man1skatv</a></span></li>
+      </ul>
+      <iframe class="map" title="Lokasi MAN1SKA TV" src="https://www.google.com/maps?q=MAN+1+Surakarta&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <form id="contact-form">
+      <label for="f-name">Nama</label>
+      <input id="f-name" name="name" type="text" autocomplete="name" required>
+      <label for="f-email">Email</label>
+      <input id="f-email" name="email" type="email" autocomplete="email" required>
+      <label for="f-phone">No. HP (boleh dikosongkan)</label>
+      <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+      <label for="f-msg">Pesan</label>
+      <textarea id="f-msg" name="message" required></textarea>
+      <div class="hp" aria-hidden="true"><label for="f-web">Jangan diisi</label><input id="f-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <button type="submit" class="btn">Kirim pesan</button>
+      <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a href="#home"><img class="footer-logo" src="logo (1).png" alt="MAN1SKA TV"></a>
+      <p class="footer-slogan">Bukan sekedar berita, tapi cerita kita.</p>
+      <p class="footer-about">Kanal televisi MAN 1 Surakarta: kabar, karya, dan cerita madrasah kita, dikerjakan bersama oleh kru MAN1SKA TV.</p>
+      <div class="socials">
+        <a href="https://instagram.com/man1skatv" target="_blank" rel="noopener" aria-label="Instagram @man1skatv"><i data-feather="instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i data-feather="youtube"></i></a>
+        <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
+      </div>
+    </div>
+    <nav class="footer-col" aria-label="Menu footer">
+      <h3>Jelajahi</h3>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang kami</a></li>
+        <li><a href="#berita">Berita</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#divisi">Divisi</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="footer-col">
+      <h3>Berita &amp; media</h3>
+      <ul>
+        <li><a href="portal/semua-berita.html">Tulisan &amp; foto</a></li>
+        <li><a href="portal/galeri-video.html">Galeri video</a></li>
+        <li><a href="portal/galeri-instagram.html">Galeri Instagram</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-reach">
+      <h3>Hubungi kami</h3>
+      <ul class="footer-contact">
+        <li><i data-feather="map-pin"></i><span>MAN 1 Surakarta, Surakarta, Jawa Tengah</span></li>
+        <li><i data-feather="mail"></i><a href="mailto:emailkamu@gmail.com" data-email>emailkamu@gmail.com</a></li>
+        <li><i data-feather="instagram"></i><a href="https://instagram.com/man1skatv" target="_blank" rel="noopener">@man1skatv</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="credit">&copy; 2026 MAN1SKA TV. Semua hak dilindungi.</p>
+    <p class="credit">Kanal televisi MAN 1 Surakarta</p>
+  </div>
+</footer>
+
+</body>
+</html>

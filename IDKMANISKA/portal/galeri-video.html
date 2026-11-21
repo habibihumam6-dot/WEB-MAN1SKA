@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f5a16">
+  <meta name="description" content="Video liputan, vlog, dan dokumentasi MAN1SKA TV. Klik gambarnya untuk memutar di sini, atau buka langsung di YouTube.">
+  <title>Galeri video - MAN1SKA TV</title>
+  <link rel="icon" type="image/png" href="../icon.png">
+
+  <!-- Font: Barlow Condensed (judul, gaya grafis berita TV) + Barlow (isi) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="portal.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script defer src="../script.js"></script>
+  <script defer src="portal.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="../index.html#home" class="navbar-logo"><img src="../logo (1).png" alt="MAN1SKA TV"></a>
+  <a class="back-btn" href="../index.html#berita"><i data-feather="arrow-left"></i>Kembali<span class="back-more"> ke beranda</span></a>
+</nav>
+
+<header class="page-head">
+  <h1>Galeri video</h1>
+  <p class="lead">Video liputan, vlog, dan dokumentasi MAN1SKA TV. Klik gambarnya untuk memutar di sini, atau buka langsung di YouTube.</p>
+  <div class="hub-action">
+    <!-- Ganti href dengan link kanal YouTube MAN1SKA TV -->
+    <a class="btn with-icon" href="https://www.youtube.com/" target="_blank" rel="noopener"><i data-feather="youtube"></i>Kunjungi kanal YouTube</a>
+  </div>
+</header>
+
+<!-- Pindah halaman: sama di ketiga halaman, hanya tanda aria-current="page" yang berbeda -->
+<nav class="subnav" aria-label="Jenis berita">
+  <a href="semua-berita.html"><i data-feather="file-text"></i>Tulisan &amp; foto</a>
+  <a href="galeri-video.html" aria-current="page"><i data-feather="youtube"></i>Video</a>
+  <a href="galeri-instagram.html"><i data-feather="instagram"></i>Instagram</a>
+</nav>
+
+<section class="hub">
+  <div class="portal">
+    <div class="portal-main">
+      <!-- Satu kartu = satu video. Ganti data-video dengan link videonya dari YouTube (boleh link watch?v=,
+           youtu.be/, atau shorts/). Gambar sampul dan tombol "Tonton di YouTube" terisi otomatis.
+           Video PERTAMA tampil besar, jadi taruh yang terbaru paling atas.
+           Selama linknya belum diisi, kartu tampil sebagai tempat kosong. -->
+      <div class="video-grid">
+        <article class="video-card" data-video="https://www.youtube.com/watch?v=GANTI_ID_VIDEO">
+          <div class="video-frame">
+            <button class="video-play" type="button" aria-label="Putar video: Judul video pertama"><img alt="" loading="lazy"><i data-feather="play"></i></button>
+          </div>
+          <div class="body">
+            <p class="meta"><span class="kind">Vlog</span><time datetime="2026-11-08">8 Nov 2026</time></p>
+            <h3>Judul video pertama</h3>
+            <a class="yt-link" href="#" target="_blank" rel="noopener">Tonton di YouTube<i data-feather="external-link"></i></a>
+          </div>
+        </article>
+        <article class="video-card" data-video="https://www.youtube.com/watch?v=GANTI_ID_VIDEO">
+          <div class="video-frame">
+            <button class="video-play" type="button" aria-label="Putar video: Judul video kedua"><img alt="" loading="lazy"><i data-feather="play"></i></button>
+          </div>
+          <div class="body">
+            <p class="meta"><span class="kind">Berita</span><time datetime="2026-11-05">5 Nov 2026</time></p>
+            <h3>Judul video kedua</h3>
+            <a class="yt-link" href="#" target="_blank" rel="noopener">Tonton di YouTube<i data-feather="external-link"></i></a>
+          </div>
+        </article>
+        <article class="video-card" data-video="https://www.youtube.com/watch?v=GANTI_ID_VIDEO">
+          <div class="video-frame">
+            <button class="video-play" type="button" aria-label="Putar video: Judul video ketiga"><img alt="" loading="lazy"><i data-feather="play"></i></button>
+          </div>
+          <div class="body">
+            <p class="meta"><span class="kind">Dokumentasi</span><time datetime="2026-11-01">1 Nov 2026</time></p>
+            <h3>Judul video ketiga</h3>
+            <a class="yt-link" href="#" target="_blank" rel="noopener">Tonton di YouTube<i data-feather="external-link"></i></a>
+          </div>
+        </article>
+        <article class="video-card" data-video="https://www.youtube.com/watch?v=GANTI_ID_VIDEO">
+          <div class="video-frame">
+            <button class="video-play" type="button" aria-label="Putar video: Judul video keempat"><img alt="" loading="lazy"><i data-feather="play"></i></button>
+          </div>
+          <div class="body">
+            <p class="meta"><span class="kind">Vlog</span><time datetime="2026-10-25">25 Okt 2026</time></p>
+            <h3>Judul video keempat</h3>
+            <a class="yt-link" href="#" target="_blank" rel="noopener">Tonton di YouTube<i data-feather="external-link"></i></a>
+          </div>
+        </article>
+        <article class="video-card" data-video="https://www.youtube.com/watch?v=GANTI_ID_VIDEO">
+          <div class="video-frame">
+            <button class="video-play" type="button" aria-label="Putar video: Judul video kelima"><img alt="" loading="lazy"><i data-feather="play"></i></button>
+          </div>
+          <div class="body">
+            <p class="meta"><span class="kind">Berita</span><time datetime="2026-10-18">18 Okt 2026</time></p>
+            <h3>Judul video kelima</h3>
+            <a class="yt-link" href="#" target="_blank" rel="noopener">Tonton di YouTube<i data-feather="external-link"></i></a>
+          </div>
+        </article>
+        <article class="video-card" data-video="https://www.youtube.com/watch?v=GANTI_ID_VIDEO">
+          <div class="video-frame">
+            <button class="video-play" type="button" aria-label="Putar video: Judul video keenam"><img alt="" loading="lazy"><i data-feather="play"></i></button>
+          </div>
+          <div class="body">
+            <p class="meta"><span class="kind">Dokumentasi</span><time datetime="2026-10-10">10 Okt 2026</time></p>
+            <h3>Judul video keenam</h3>
+            <a class="yt-link" href="#" target="_blank" rel="noopener">Tonton di YouTube<i data-feather="external-link"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <aside class="portal-side">
+    <div class="side-box">
+      <h3>Ikuti kami</h3>
+      <div class="follow">
+        <a href="https://instagram.com/man1skatv" target="_blank" rel="noopener"><i data-feather="instagram"></i>@man1skatv</a>
+        <!-- Ganti href dengan link kanal YouTube MAN1SKA TV -->
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener"><i data-feather="youtube"></i>Kanal YouTube</a>
+      </div>
+    </div>
+    <div class="side-promo">
+      <p class="promo-slogan">Bukan sekedar berita, tapi cerita kita.</p>
+      <a class="btn gold with-icon" href="../index.html#about">Kenali MAN1SKA TV<i data-feather="arrow-right"></i></a>
+    </div>
+    </aside>
+  </div>
+</section>
+
+<footer>
+  <div class="socials">
+    <a href="https://instagram.com/man1skatv" target="_blank" rel="noopener" aria-label="Instagram @man1skatv"><i data-feather="instagram"></i></a>
+    <a href="#" aria-label="YouTube"><i data-feather="youtube"></i></a>
+    <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
+  </div>
+  <div class="links">
+    <a href="../index.html#home">Beranda</a><a href="../index.html#about">Tentang kami</a><a href="../index.html#berita">Berita</a><a href="../index.html#program">Program</a><a href="../index.html#divisi">Divisi</a><a href="../index.html#contact">Kontak</a>
+  </div>
+  <p class="credit">&copy; 2026 MAN1SKA TV.</p>
+</footer>
+
+</body>
+</html>
