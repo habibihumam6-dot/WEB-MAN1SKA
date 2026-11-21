@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f5a16">
+  <meta name="description" content="Semua liputan, vlog, dan dokumentasi MAN1SKA TV dalam bentuk tulisan dan foto. Klik salah satu untuk membaca selengkapnya.">
+  <title>Berita selengkapnya - MAN1SKA TV</title>
+  <link rel="icon" type="image/png" href="../icon.png">
+
+  <!-- Font: Barlow Condensed (judul, gaya grafis berita TV) + Barlow (isi) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="portal.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script defer src="../script.js"></script>
+  <script defer src="portal.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="../index.html#home" class="navbar-logo"><img src="../logo (1).png" alt="MAN1SKA TV"></a>
+  <a class="back-btn" href="../index.html#berita"><i data-feather="arrow-left"></i>Kembali<span class="back-more"> ke beranda</span></a>
+</nav>
+
+<header class="page-head">
+  <h1>Berita selengkapnya</h1>
+  <p class="lead">Semua liputan, vlog, dan dokumentasi MAN1SKA TV dalam bentuk tulisan dan foto. Klik salah satu untuk membaca selengkapnya.</p>
+</header>
+
+<!-- Pindah halaman: sama di ketiga halaman, hanya tanda aria-current="page" yang berbeda -->
+<nav class="subnav" aria-label="Jenis berita">
+  <a href="semua-berita.html" aria-current="page"><i data-feather="file-text"></i>Tulisan &amp; foto</a>
+  <a href="galeri-video.html"><i data-feather="youtube"></i>Video</a>
+  <a href="galeri-instagram.html"><i data-feather="instagram"></i>Instagram</a>
+</nav>
+
+<section class="hub">
+  <div class="portal">
+    <div class="portal-main">
+      <!-- Sorotan, filter jenis, dan daftar "Terbaru" di sidebar dibuat otomatis oleh portal.js dari daftar di bawah. -->
+      <div class="feature" id="feature"></div>
+      <h2>Arsip Berita</h2>
+      <div class="chips" id="chips" role="group" aria-label="Filter jenis berita"></div>
+      <!-- Samakan dengan kartu di index.html. Satu kartu = satu berita; salin blok news-card untuk menambah.
+           Yang terbaru taruh PALING ATAS: kartu paling atas otomatis jadi Sorotan. -->
+      <div class="news-list" id="news-list">
+        <a class="news-card" href="/berita/berita-1.html">
+          <img src="../../gambar-berita/Upacara.jpg" alt="">
+          <div class="body">
+            <p class="meta"><span class="kind">Berita</span><time datetime="2026-11-10">10 Nov 2026</time></p>
+            <h3>Upacara Hari Pahlawan</h3>
+            <p class="desc">Pelaksanaan upacara memperingati Hari Pahlawan di MAN 1 Surakarta</p>
+          </div>
+        </a>
+        <a class="news-card" href="berita-2.html">
+          <img src="img/2.jpg" alt="">
+          <div class="body">
+            <p class="meta"><span class="kind">Vlog</span><time datetime="2026-11-08">8 Nov 2026</time></p>
+            <h3>Judul vlog pertama</h3>
+            <p class="desc">Tulis ringkasan singkat di sini, cukup satu sampai dua kalimat supaya kartu tetap rapi.</p>
+          </div>
+        </a>
+        <a class="news-card" href="berita-3.html">
+          <img src="img/3.jpg" alt="">
+          <div class="body">
+            <p class="meta"><span class="kind">Dokumentasi</span><time datetime="2026-11-02">2 Nov 2026</time></p>
+            <h3>Judul dokumentasi pertama</h3>
+            <p class="desc">Tulis ringkasan singkat di sini, cukup satu sampai dua kalimat supaya kartu tetap rapi.</p>
+          </div>
+        </a>
+        <a class="news-card" href="berita-4.html">
+          <img src="img/4.jpg" alt="">
+          <div class="body">
+            <p class="meta"><span class="kind">Berita</span><time datetime="2026-10-27">27 Okt 2026</time></p>
+            <h3>Judul berita kedua</h3>
+            <p class="desc">Tulis ringkasan singkat di sini, cukup satu sampai dua kalimat supaya kartu tetap rapi.</p>
+          </div>
+        </a>
+        <a class="news-card" href="berita-5.html">
+          <img src="img/5.jpg" alt="">
+          <div class="body">
+            <p class="meta"><span class="kind">Vlog</span><time datetime="2026-10-20">20 Okt 2026</time></p>
+            <h3>Judul vlog kedua</h3>
+            <p class="desc">Tulis ringkasan singkat di sini, cukup satu sampai dua kalimat supaya kartu tetap rapi.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <aside class="portal-side">
+    <div class="side-box">
+      <h3>Terbaru</h3>
+      <ol class="rank" id="rank"></ol>
+    </div>
+    <div class="side-box">
+      <h3>Ikuti kami</h3>
+      <div class="follow">
+        <a href="https://instagram.com/man1skatv" target="_blank" rel="noopener"><i data-feather="instagram"></i>@man1skatv</a>
+        <!-- Ganti href dengan link kanal YouTube MAN1SKA TV -->
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener"><i data-feather="youtube"></i>Kanal YouTube</a>
+      </div>
+    </div>
+    <div class="side-promo">
+      <p class="promo-slogan">Bukan sekedar berita, tapi cerita kita.</p>
+      <a class="btn gold with-icon" href="../index.html#about">Kenali MAN1SKA TV<i data-feather="arrow-right"></i></a>
+    </div>
+    </aside>
+  </div>
+</section>
+
+<footer>
+  <div class="socials">
+    <a href="https://instagram.com/man1skatv" target="_blank" rel="noopener" aria-label="Instagram @man1skatv"><i data-feather="instagram"></i></a>
+    <a href="#" aria-label="YouTube"><i data-feather="youtube"></i></a>
+    <a href="#" aria-label="Facebook"><i data-feather="facebook"></i></a>
+  </div>
+  <div class="links">
+    <a href="../index.html#home">Beranda</a><a href="../index.html#about">Tentang kami</a><a href="../index.html#berita">Berita</a><a href="../index.html#program">Program</a><a href="../index.html#divisi">Divisi</a><a href="../index.html#contact">Kontak</a>
+  </div>
+  <p class="credit">&copy; 2026 MAN1SKA TV.</p>
+</footer>
+
+</body>
+</html>
