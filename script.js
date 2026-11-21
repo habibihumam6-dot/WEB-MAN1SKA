@@ -1,6 +1,15 @@
 // ===== Ikon Feather =====
 if (window.feather) feather.replace();
 
+// ===== Pencarian =====
+// search.js (satu folder dengan script.js) menambah ikon cari di navbar beserta panel pencariannya.
+// Dimuat dari sini supaya otomatis aktif di semua halaman yang memakai script.js, tanpa menyalin tag ke tiap halaman.
+if (document.currentScript) {
+  const searchScript = document.createElement('script');
+  searchScript.src = new URL('search.js', document.currentScript.src).href;
+  document.head.append(searchScript);
+}
+
 // ===== Ganti dengan email tujuan pesan dari form kontak =====
 const CONTACT_EMAIL = 'emailkamu@gmail.com';
 // Alamat ini juga dipakai untuk link email di bagian Kontak (elemen yang punya atribut data-email),
